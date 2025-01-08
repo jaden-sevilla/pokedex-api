@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.searchButton = new System.Windows.Forms.Button();
@@ -88,7 +87,7 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Image = global::FormAPI.Properties.Resources.d2joc5j_c2562d13_9dbe_4747_b70b_03e25d3abb80;
 			this.pictureBox2.Location = new System.Drawing.Point(3, 15);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(122, 63);
