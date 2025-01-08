@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="d2joc5j-c2562d13-9dbe-4747-b70b-03e25d3abb80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\d2joc5j-c2562d13-9dbe-4747-b70b-03e25d3abb80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="d3b98cf-4fc5c76b-2a99-47fc-98b6-d7d4ee8d9d9f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\d3b98cf-4fc5c76b-2a99-47fc-98b6-d7d4ee8d9d9f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pokédex_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pokédex_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="International_Pokémon_logo.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\International_Pokémon_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

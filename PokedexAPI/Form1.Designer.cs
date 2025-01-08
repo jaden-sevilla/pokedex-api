@@ -1,4 +1,8 @@
-﻿namespace FormAPI
+﻿using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
+
+namespace FormAPI
 {
 	partial class Form1
 	{
@@ -30,7 +34,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.searchButton = new System.Windows.Forms.Button();
 			this.searchBar = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -66,11 +69,12 @@
 			this.spDefBar = new System.Windows.Forms.Label();
 			this.speedBar = new System.Windows.Forms.Label();
 			this.shinyButton = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.randomButton = new System.Windows.Forms.Button();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -84,16 +88,6 @@
 			this.panel1.Size = new System.Drawing.Size(648, 81);
 			this.panel1.TabIndex = 1;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::FormAPI.Properties.Resources.d2joc5j_c2562d13_9dbe_4747_b70b_03e25d3abb80;
-			this.pictureBox2.Location = new System.Drawing.Point(3, 15);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(122, 63);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 42;
-			this.pictureBox2.TabStop = false;
 			// 
 			// searchButton
 			// 
@@ -518,15 +512,6 @@
 			this.shinyButton.UseVisualStyleBackColor = false;
 			this.shinyButton.Click += new System.EventHandler(this.button2_Click);
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Location = new System.Drawing.Point(18, 178);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(242, 195);
-			this.pictureBox1.TabIndex = 6;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-			// 
 			// randomButton
 			// 
 			this.randomButton.BackColor = System.Drawing.Color.Silver;
@@ -538,6 +523,28 @@
 			this.randomButton.Text = "Random";
 			this.randomButton.UseVisualStyleBackColor = false;
 			this.randomButton.Click += new System.EventHandler(this.button1_Click_1);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Location = new System.Drawing.Point(18, 178);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(242, 195);
+			this.pictureBox1.TabIndex = 6;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			// 
+			// pictureBox2
+			// 
+			string projectRootDirectory = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\"));
+			string imageDirectory = Path.Combine(projectRootDirectory, "images");
+			string imagePath = Path.Combine(imageDirectory, "pokeball.png");
+			this.pictureBox2.Image = Image.FromFile(imagePath);
+			this.pictureBox2.Location = new System.Drawing.Point(3, 15);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(122, 63);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 42;
+			this.pictureBox2.TabStop = false;
 			// 
 			// Form1
 			// 
@@ -585,8 +592,8 @@
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

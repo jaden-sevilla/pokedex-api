@@ -59,55 +59,5 @@ namespace FormAPI.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap d2joc5j_c2562d13_9dbe_4747_b70b_03e25d3abb80 {
-            get {
-                object obj = ResourceManager.GetObject("d2joc5j-c2562d13-9dbe-4747-b70b-03e25d3abb80", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap d3b98cf_4fc5c76b_2a99_47fc_98b6_d7d4ee8d9d9f {
-            get {
-                object obj = ResourceManager.GetObject("d3b98cf-4fc5c76b-2a99-47fc-98b6-d7d4ee8d9d9f", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap International_Pokémon_logo_svg {
-            get {
-                object obj = ResourceManager.GetObject("International_Pokémon_logo.svg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Pokédex_logo {
-            get {
-                object obj = ResourceManager.GetObject("Pokédex_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
