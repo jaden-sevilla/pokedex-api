@@ -29,7 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.searchButton = new System.Windows.Forms.Button();
 			this.searchBar = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.label2 = new System.Windows.Forms.Label();
@@ -65,12 +68,10 @@
 			this.speedBar = new System.Windows.Forms.Label();
 			this.shinyButton = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.searchButton = new System.Windows.Forms.Button();
 			this.randomButton = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -84,6 +85,27 @@
 			this.panel1.Size = new System.Drawing.Size(648, 81);
 			this.panel1.TabIndex = 1;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(3, 15);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(122, 63);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 42;
+			this.pictureBox2.TabStop = false;
+			// 
+			// searchButton
+			// 
+			this.searchButton.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.searchButton.Location = new System.Drawing.Point(402, 31);
+			this.searchButton.Name = "searchButton";
+			this.searchButton.Size = new System.Drawing.Size(49, 31);
+			this.searchButton.TabIndex = 2;
+			this.searchButton.Text = "Search";
+			this.searchButton.UseVisualStyleBackColor = true;
+			this.searchButton.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// searchBar
 			// 
@@ -506,27 +528,6 @@
 			this.pictureBox1.TabStop = false;
 			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::FormAPI.Properties.Resources.d2joc5j_c2562d13_9dbe_4747_b70b_03e25d3abb80;
-			this.pictureBox2.Location = new System.Drawing.Point(3, 15);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(122, 63);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 42;
-			this.pictureBox2.TabStop = false;
-			// 
-			// searchButton
-			// 
-			this.searchButton.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.searchButton.Location = new System.Drawing.Point(402, 31);
-			this.searchButton.Name = "searchButton";
-			this.searchButton.Size = new System.Drawing.Size(49, 31);
-			this.searchButton.TabIndex = 2;
-			this.searchButton.Text = "Search";
-			this.searchButton.UseVisualStyleBackColor = true;
-			this.searchButton.Click += new System.EventHandler(this.button1_Click);
-			// 
 			// randomButton
 			// 
 			this.randomButton.BackColor = System.Drawing.Color.Silver;
@@ -585,8 +586,8 @@
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
